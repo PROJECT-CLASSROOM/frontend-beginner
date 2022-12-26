@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function validate() {
+            /*to do validate fiels*/
+            /*document.getElementById('name').value;
+            if ( ) {
+
+            }*/
+        }
+    </script>
+</head>
+<body>
+    <h1>Forms</h1>
+
+
+    <!--<form action="/forms.html">-->
+    <form >
+        <label for="name">First Name</label>
+        <input type="text" placeholder="Enter First Name" value="" name="name" id="name">
+
+        <br>
+        <br>
+
+        <label for="lname">Last Name</label>
+        <input type="text" placeholder="Enter Last Name" name="lname" id="lname" disabled>
+
+        <br>
+        <br>
+
+        <label for="userEmail">Email</label>
+        <input type="email" placeholder="Enter Email" name="email" id="userEmail" required>
+
+        <br>
+        <br>
+
+        <input type="checkbox" name="notifications" id="notifications" checked><label for="notifications" >Want to subscribe?</label>
+
+        <br>
+        <br>
+        <label for="message-new">Message</label>
+        <br>
+        <textarea name="message" id="message-new" rows="10" cols="12" placeholder="Enter Message"></textarea>
+        <br>
+
+        <label>Choose a course:</label>
+        <select name="course">
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="javascript" selected>Java Script</option>
+        </select>
+
+        <br>
+
+        <input type="submit" value="Sign Up" onclick="validate()">
+
+    </form>
+</body>
+</html>
