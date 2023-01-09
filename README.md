@@ -1,4 +1,3 @@
-# Materijal 
 
 # Video Lekcije
 1. Razlika izmedju margine i paddinga: https://www.youtube.com/watch?v=Svb5u48MJBI
