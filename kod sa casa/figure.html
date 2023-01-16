@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figure Tag</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        html, body, h1, h2, h3, h4, h5, h6, p, ul, li, figure {
+            margin: 0;
+            padding: 0;
+        }
+        .image-container {
+            width: 50%;
+            border: 1px solid black;
+        }
+        .nature {
+            width: 100%;
+            height: 360px;
+            object-fit: cover;
+        }
+        .image-description {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="./nature.jpg" width="360" height="150"> 
+        <p>This is nature photo</p>
+    </div>
+
+    <!-- Image with description -->
+    <figure class="image-container">
+        <figcaption class="image-description">This is nature photo</figcaption>
+        <img class="nature" src="./nature.jpg" >
+    </figure>
+
+
+    <!-- Code Snippet-->
+    <figure>
+        <figcaption>Get browser details using <code>navigator</code>.</figcaption>
+        <pre>
+            function NavigatorExample() {
+                let txt;
+                txt = "Browser CodeName: " + navigator.appCodeName + "; ";
+                txt+= "Browser Name: " + navigator.appName + "; ";
+                txt+= "Browser Version: " + navigator.appVersion  + "; ";
+                txt+= "Cookies Enabled: " + navigator.cookieEnabled  + "; ";
+                txt+= "Platform: " + navigator.platform  + "; ";
+                txt+= "User-agent header: " + navigator.userAgent  + "; ";
+                console.log("NavigatorExample", txt);
+              }
+        </pre>
+    </figure>
+
+    <!-- Quotes -->
+    <figure>
+        <figcaption><b>Edsger Dijkstra:</b></figcaption>
+        <blockquote>
+            If debugging is the process of removing software bugs, then programming must
+            be the process of putting them in.
+        </blockquote>
+    </figure>
+
+
+</body>
+</html>

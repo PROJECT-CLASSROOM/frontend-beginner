@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+}
+html, body, h1, h2, h3, h4, h5, h6, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+}
+h1, .h1 {
+    font-size: 34px;
+}
+h2, .h2 {
+    font-size: 30px;
+}
+h3, .h3 {
+    font-size: 28px;
+}
+h4, .h4 {
+    font-size: 24px;
+}
+h5, .h5 {
+    font-size: 20px;
+}
+h6, .h6 {
+    font-size: 16px;
+}
+
+
+.header {
+    text-align: center;
+}
+
+.nav {
+    height: 72px;
+}
+
+.nav-list {
+    height: 100%;
+    line-height: 72px;
+}
+
+.nav-item {
+    display: inline-block;
+   margin-left: 16px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 24px;
+    color: #eeab2e;
+    text-transform: uppercase;
+}
+
+.nav-link:hover {
+    color: #000000;
+}
