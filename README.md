@@ -18,3 +18,7 @@
 3. https://piccalil.li/blog/a-modern-css-reset/
 
 *Slobodno napravi svoju kombinaciju CSS reseta
+
+
+## Blog postovi
+1. Figure tag - https://www.classroom.rs/kad-i-kako-se-koristi-figure-tag/ 
