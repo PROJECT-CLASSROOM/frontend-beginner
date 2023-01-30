@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function onButtonClick() {
+            alert('Button Clicked!');
+        }
+
+        function saberi() {
+            let a = 5;
+            let b; //ne znamo koja je vrednos
+            b = 10; // sada je vrednost 10
+
+            b = 20; // sada je b 20
+            const pi = 3.14;
+            //pi = 5; kad je promenljiva tipa const nije moguce promeniti vrednost
+            let suma = a + b + pi;
+            alert(suma);
+
+        }
+
+    </script>
+ 
+</head>
+<body>
+    <button onclick="onButtonClick()">Click me!</button>
+
+    <button onclick="saberi()">Saberi</button>
+
+
+    <script src="./index.js"></script>
+</body>
+</html>

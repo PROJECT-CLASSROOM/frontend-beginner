@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        function saberi() {
+            //preuzmem vrednost iz inputa za X, koji ima id =  first-number
+            //DOM
+            let x = document.getElementById('first-number').value; //x  = 5
+            console.log(typeof(x)); // ovo je string moramo pretvoriti u broj
+            x = Number(x);
+            let y = document.getElementById('secound-number').value; // y = 4
+            y = Number(y);
+
+            /*// 5 == 0 || 4 == 0
+            if (x == 0 && y == 0) { //uslov nije tacan kada oba iskaza su netacna
+                alert('Please enter values');
+                return;
+            }*/
+
+  
+            //da li x nula ili da li je y 0
+            if (x == 0) { // 0 == 0 i to je tacno
+                alert('Please enter value for x');
+            } else { //ako uslov u if-delu nije tacan (false) on propada u else deo
+                console.log('x je' + x);
+            }
+
+            if (y == 0) {
+                alert('Please enter value for y');
+            } else {
+                console.log('y je '+ y);
+            }
+
+
+
+
+            let suma = 0;
+            suma = x + y;
+
+            alert('Suma je ' + suma);
+        }
+
+        function oduzmi() {
+            let x = document.getElementById('first-number').value; //x  = 5
+            console.log(typeof(x)); // ovo je string moramo pretvoriti u broj
+            x = Number(x);
+            let y = document.getElementById('secound-number').value; // y = 4
+            y = Number(y);
+
+            let rez = 0;
+            if (y > x)  {
+                rez = y - x;
+            } else {
+                rez = x - y;
+            }
+            alert("Razlika dva broja je " + rez);
+        }
+
+        //za domaci pomocu jedne funkcije reziti sabiranje i oduzimanje
+        /*function operacija(operator) {
+            if () { //proveriti da li je operator + ili je -
+
+            } 
+        }*/
+    </script>
+</head>
+<body>
+    <main>
+        <label>X = </label>
+        <input type="number" min="1" value="" id="first-number"><br>
+
+        <label>Y = </label>
+        <input type="number" min="1" value="" id="secound-number"><br>
+
+        <button onclick="saberi('+')">Saberi</button>
+        <button onclick="oduzmi('-')">Oduzmi</button>
+    </main>
+</body>
+</html>

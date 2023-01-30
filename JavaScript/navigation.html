@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #home {
+            display: block;
+        }
+        #about {
+            display: none;
+        }
+        #contact {
+            display: none;
+        }
+    </style>
+    <script>
+        function onNavChange(navId) {
+            console.log(navId); //home
+
+            if (navId == 'about') {
+                //prikazi sada about sekciju
+                document.getElementById('about').style.display = 'block';
+                document.getElementById('home').style.display = 'none';
+                document.getElementById('contact').style.display = 'none';
+            } else if (navId == 'home') {
+                document.getElementById('about').style.display = 'none';
+                document.getElementById('home').style.display = 'block';
+                document.getElementById('contact').style.display = 'none';
+            } else if (nav == 'contact') {
+                document.getElementById('about').style.display = 'none';
+                document.getElementById('home').style.display = 'none';
+                document.getElementById('contact').style.display = 'block';
+            }
+            
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="nav-item" onclick="onNavChange('home')" ><a href="#home">Home</a></li>
+                <li  class="nav-item" onclick="onNavChange('about')"><a href="#about">About</a></li>
+                <li  class="nav-item" onclick="onNavChange('contact')"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Home Page</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem quia iste provident sint nulla in delectus ad officia aliquid aperiam optio laudantium atque, ut, eveniet aspernatur? Iure, molestiae dolorum! Animi tempora numquam sit dolor iusto facilis ducimus vel cupiditate, possimus nam perferendis pariatur aliquam voluptate nesciunt neque ullam, ea iste. Dignissimos beatae voluptatem molestiae laborum in vitae dolorum provident temporibus vero asperiores nostrum ut nihil aspernatur, non incidunt impedit magni fugiat accusantium esse, reiciendis corrupti velit. Labore nam modi voluptas, deleniti reiciendis impedit sed harum iusto mollitia! Commodi totam ratione animi eum laudantium consectetur. Aliquid at expedita distinctio iure consequatur incidunt similique fugit eligendi hic nobis libero nisi culpa quaerat totam ipsam omnis soluta unde qui officia quae adipisci alias minus, nulla ipsa. Ea, similique!</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem quia iste provident sint nulla in delectus ad officia aliquid aperiam optio laudantium atque, ut, eveniet aspernatur? Iure, molestiae dolorum! Animi tempora numquam sit dolor iusto facilis ducimus vel cupiditate, possimus nam perferendis pariatur aliquam voluptate nesciunt neque ullam, ea iste. Dignissimos beatae voluptatem molestiae laborum in vitae dolorum provident temporibus vero asperiores nostrum ut nihil aspernatur, non incidunt impedit magni fugiat accusantium esse, reiciendis corrupti velit. Labore nam modi voluptas, deleniti reiciendis impedit sed harum iusto mollitia! Commodi totam ratione animi eum laudantium consectetur. Aliquid at expedita distinctio iure consequatur incidunt similique fugit eligendi hic nobis libero nisi culpa quaerat totam ipsam omnis soluta unde qui officia quae adipisci alias minus, nulla ipsa. Ea, similique!</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem quia iste provident sint nulla in delectus ad officia aliquid aperiam optio laudantium atque, ut, eveniet aspernatur? Iure, molestiae dolorum! Animi tempora numquam sit dolor iusto facilis ducimus vel cupiditate, possimus nam perferendis pariatur aliquam voluptate nesciunt neque ullam, ea iste. Dignissimos beatae voluptatem molestiae laborum in vitae dolorum provident temporibus vero asperiores nostrum ut nihil aspernatur, non incidunt impedit magni fugiat accusantium esse, reiciendis corrupti velit. Labore nam modi voluptas, deleniti reiciendis impedit sed harum iusto mollitia! Commodi totam ratione animi eum laudantium consectetur. Aliquid at expedita distinctio iure consequatur incidunt similique fugit eligendi hic nobis libero nisi culpa quaerat totam ipsam omnis soluta unde qui officia quae adipisci alias minus, nulla ipsa. Ea, similique!</p>
+        
+        </section>
+        <section id="about">
+            <h2>About</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit quis voluptatem accusamus provident magni, repellat minus dicta non libero inventore omnis. Repellendus enim quasi placeat fugit, veniam, eaque quia architecto maxime debitis illo, sapiente amet reprehenderit a blanditiis praesentium. Corrupti nesciunt explicabo commodi omnis deleniti, totam perferendis? Id mollitia quaerat saepe aspernatur adipisci? Culpa laboriosam ad commodi, facilis repellat labore laborum dolor nam a beatae dignissimos ex nisi amet vitae sapiente molestias vero at cumque natus debitis eaque minima aliquam. Molestiae eum iure explicabo error harum delectus dolore, eos suscipit, obcaecati quae et vitae quidem consequatur dolores cupiditate accusantium ex hic est quisquam unde? Nihil mollitia harum laboriosam optio expedita exercitationem, adipisci deserunt hic! Suscipit amet nihil nesciunt dignissimos dolorem consequuntur in corporis error consequatur.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem quia iste provident sint nulla in delectus ad officia aliquid aperiam optio laudantium atque, ut, eveniet aspernatur? Iure, molestiae dolorum! Animi tempora numquam sit dolor iusto facilis ducimus vel cupiditate, possimus nam perferendis pariatur aliquam voluptate nesciunt neque ullam, ea iste. Dignissimos beatae voluptatem molestiae laborum in vitae dolorum provident temporibus vero asperiores nostrum ut nihil aspernatur, non incidunt impedit magni fugiat accusantium esse, reiciendis corrupti velit. Labore nam modi voluptas, deleniti reiciendis impedit sed harum iusto mollitia! Commodi totam ratione animi eum laudantium consectetur. Aliquid at expedita distinctio iure consequatur incidunt similique fugit eligendi hic nobis libero nisi culpa quaerat totam ipsam omnis soluta unde qui officia quae adipisci alias minus, nulla ipsa. Ea, similique!</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem quia iste provident sint nulla in delectus ad officia aliquid aperiam optio laudantium atque, ut, eveniet aspernatur? Iure, molestiae dolorum! Animi tempora numquam sit dolor iusto facilis ducimus vel cupiditate, possimus nam perferendis pariatur aliquam voluptate nesciunt neque ullam, ea iste. Dignissimos beatae voluptatem molestiae laborum in vitae dolorum provident temporibus vero asperiores nostrum ut nihil aspernatur, non incidunt impedit magni fugiat accusantium esse, reiciendis corrupti velit. Labore nam modi voluptas, deleniti reiciendis impedit sed harum iusto mollitia! Commodi totam ratione animi eum laudantium consectetur. Aliquid at expedita distinctio iure consequatur incidunt similique fugit eligendi hic nobis libero nisi culpa quaerat totam ipsam omnis soluta unde qui officia quae adipisci alias minus, nulla ipsa. Ea, similique!</p>
+        
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit quis voluptatem accusamus provident magni, repellat minus dicta non libero inventore omnis. Repellendus enim quasi placeat fugit, veniam, eaque quia architecto maxime debitis illo, sapiente amet reprehenderit a blanditiis praesentium. Corrupti nesciunt explicabo commodi omnis deleniti, totam perferendis? Id mollitia quaerat saepe aspernatur adipisci? Culpa laboriosam ad commodi, facilis repellat labore laborum dolor nam a beatae dignissimos ex nisi amet vitae sapiente molestias vero at cumque natus debitis eaque minima aliquam. Molestiae eum iure explicabo error harum delectus dolore, eos suscipit, obcaecati quae et vitae quidem consequatur dolores cupiditate accusantium ex hic est quisquam unde? Nihil mollitia harum laboriosam optio expedita exercitationem, adipisci deserunt hic! Suscipit amet nihil nesciunt dignissimos dolorem consequuntur in corporis error consequatur.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem quia iste provident sint nulla in delectus ad officia aliquid aperiam optio laudantium atque, ut, eveniet aspernatur? Iure, molestiae dolorum! Animi tempora numquam sit dolor iusto facilis ducimus vel cupiditate, possimus nam perferendis pariatur aliquam voluptate nesciunt neque ullam, ea iste. Dignissimos beatae voluptatem molestiae laborum in vitae dolorum provident temporibus vero asperiores nostrum ut nihil aspernatur, non incidunt impedit magni fugiat accusantium esse, reiciendis corrupti velit. Labore nam modi voluptas, deleniti reiciendis impedit sed harum iusto mollitia! Commodi totam ratione animi eum laudantium consectetur. Aliquid at expedita distinctio iure consequatur incidunt similique fugit eligendi hic nobis libero nisi culpa quaerat totam ipsam omnis soluta unde qui officia quae adipisci alias minus, nulla ipsa. Ea, similique!</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem quia iste provident sint nulla in delectus ad officia aliquid aperiam optio laudantium atque, ut, eveniet aspernatur? Iure, molestiae dolorum! Animi tempora numquam sit dolor iusto facilis ducimus vel cupiditate, possimus nam perferendis pariatur aliquam voluptate nesciunt neque ullam, ea iste. Dignissimos beatae voluptatem molestiae laborum in vitae dolorum provident temporibus vero asperiores nostrum ut nihil aspernatur, non incidunt impedit magni fugiat accusantium esse, reiciendis corrupti velit. Labore nam modi voluptas, deleniti reiciendis impedit sed harum iusto mollitia! Commodi totam ratione animi eum laudantium consectetur. Aliquid at expedita distinctio iure consequatur incidunt similique fugit eligendi hic nobis libero nisi culpa quaerat totam ipsam omnis soluta unde qui officia quae adipisci alias minus, nulla ipsa. Ea, similique!</p>
+        
+        </section>
+
+    </main>
+</body>
+</html>
